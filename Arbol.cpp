@@ -1,8 +1,8 @@
 /*********************************************
 * Programa: Arbol
 *
-* Descripción:
-*  Este programa imprime la silueta de un árbol
+* Descripciï¿½n:
+*  Este programa imprime la silueta de un ï¿½rbol
 *  de navidad, hecha con asteriscos
 ***********************************************/
 
