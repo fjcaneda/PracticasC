@@ -1,8 +1,8 @@
 /***********************************************************
 * Programa: craps.c
-* DescripciÛn: Este programa emula el juego de dados
+* Descripci√≤n: Este programa emula el juego de dados
 * llamado "craps"
-* Autor: Francisco JosÈ Caneda Iglesias.
+* Autor: Francisco Jos√© Caneda Iglesias.
 * E-male: fjcaneda@gmail.com
 ***************************************************************/
 #include <stdio.h>
@@ -11,20 +11,20 @@
 
 /* constantes enumeradas que almacenan el estado actual del juego*/
 enum status {CONTINUA, GANA, PIERDE};
-/* Prototipo de la funciÛn tiraDados */
+/* Prototipo de la funci√≥n tiraDados */
 int tiraDados (void);
-/* FunciÛn main */
+/* Funci√≥n main */
 int main () {
     int suma;
     int miPunto;
 
     enum status  statusJuego;
 
-    /*Randomizamos el generador de n˙meros mediante las funciones srand () y time () */
+    /*Randomizamos el generador de n√∫meros mediante las funciones srand () y time () */
     srand (time (NULL));
     suma = tiraDados();
 
-    /* Determina el estado del juego bas·ndose en la suma de los dados */
+    /* Determina el estado del juego bas√°ndose en la suma de los dados */
     switch (suma) {
         /* El jugador gana en el primer tiro */
         case 7:
@@ -65,10 +65,10 @@ int main () {
     } else {
         printf ("Lo siento el jugador pierde\n");
     }
-    return 0; /* Indica que el programa terminaa con Èxito */
+    return 0; /* Indica que el programa termina con √©xito */
 } /* Final del bloque main */
 
-/* DeclaraciÛn de la funciÛn tiraDados */
+/* Declaraci√≥n de la funci√≥n tiraDados */
 int tiraDados (void) {
     int dado1;
     int dado2;
@@ -79,6 +79,6 @@ int tiraDados (void) {
     sumaTemp = dado1 + dado2;
 
     /* Imprimimos los resultados del tiro de dados */
-    printf ( "El jugador ha obtenido una putuacion de %d + %d = %d\n", dado1, dado2, sumaTemp);
+    printf ( "El jugador ha obtenido una puntuaci√≥n de %d + %d = %d\n", dado1, dado2, sumaTemp);
     return sumaTemp;
-} /* Fin de la funciÛn tiraDados */
+} /* Fin de la funci√≥n tiraDados */

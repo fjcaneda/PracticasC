@@ -2,16 +2,16 @@
 * Programa: ordenarDatos
 *
 * Hace las conversiones de temperatura
-* entre las trres principales escalas,
-* Celsius, Farenhait y Kelvin.
-* Autor: Francisco José Caneda Iglesias
+* entre las tres principales escalas,
+* Celsius, Farenheit y Kelvin.
+* Autor: Francisco JosÃ© Caneda Iglesias
 * Email: fjcaneda@gmail.com
-* Fecha de creación: 16/04/2014
+* Fecha de creaciÃ³n: 16/04/2014
 ******************************************/
 #include <stdio.h>
 #include <stdlib.h>
 
-/* Prtotipos de las funciones */
+/* Prototipos de las funciones */
 void menu();
 float FarenhetACelsius (float temperatura);
 float CelsiusAFarenheit (float temperatura);
@@ -20,16 +20,16 @@ float CelsiusAKevin (float temperatura);
 float KelvinAFarenheit (float temperatura);
 float FarenheitAKelvin (float temperatura);
 
-/* Método main */
+/* FunciÃ³n main */
 int main () {
-    /* Declaración de variables */
-    char opcion;      //Almacena la opción del menú elegida.
+    /* DeclaraciÃ³n de variables */
+    char opcion;      //Almacena la opciï¿½n del menï¿½ elegida.
     float temperatura;
 
     menu();
     printf ("\nElija una opcion (pulse \"F\" para finalizar): ");
     scanf ("%c", &opcion);
-    system("cls");       // Borra la pantalla, se usa junto con la librería <stdlib.h>
+    system("cls");       // Borra la pantalla, se usa junto con la librerÃ­a <stdlib.h>
     switch (opcion) {
         case '1':
             printf ("Introduzca la temperatura en grados Farenheit: ");
@@ -80,9 +80,9 @@ int main () {
     }
 }
 
-/* A partir de aquí declaramos las funciones */
+/* A partir de aquÃ­ declaramos las funciones */
 void menu() {
-    /* Creamos aquí las opciones del menú de usuario */
+    /* Creamos aquÃ­ las opciones del menÃº de usuario */
     printf ("1) Farenheit a Celsius.\n");
     printf ("2) Celsius a Farenheit.\n");
     printf ("3) Kelvin a Celsius.\n");
@@ -91,32 +91,32 @@ void menu() {
     printf ("6) Farenheit a Kelvin.\n");
 }
 
-/* Función para convertir grados Farenheit a grados Celsius */
+/* FunciÃ³n para convertir grados Farenheit a grados Celsius */
 float FarenhetACelsius(float temperatura) {
    return (5 * (temperatura - 32)) / 9;
 }
 
-/* Función para convertir grados Celsius a Farenheit */
+/* FunciÃ³n para convertir grados Celsius a Farenheit */
 float CelsiusAFarenheit(float temperatura) {
     return ((95 * temperatura) / 5) + 32;
 }
 
-/* Función para convertir grados kelvin a Celsius */
+/* FunciÃ³n para convertir grados kelvin a Celsius */
 float KelvinACelsius(float temperatura) {
     return temperatura - 273.15;
 }
 
-/* Función para convertir grado Celsius a Kevin */
+/* FunciÃ³n para convertir grado Celsius a Kevin */
 float CelsiusAKevin(float temperatura) {
     return temperatura + 273.15;
 }
 
-/* Función para convertir grados Kelvin a Farenheit */
+/* FunciÃ³n para convertir grados Kelvin a Farenheit */
 float KelvinAFarenheit(float temperatura) {
     return ((9 * temperatura - 273.15) / 5) + 32;
 }
 
-/* Función para convertir grados Farenheit */
+/* FunciÃ³n para convertir grados Farenheit */
 float FarenheitAKelvin(float temperatura) {
     return (5 * (temperatura - 32) / 9) + 273.15;
 }

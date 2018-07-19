@@ -22,7 +22,7 @@ int main() {
    int edad;                             //Edad del cliente
    float totalRecaudado = 0.0;           //El total de la recaudación
    float precioAPagar;                   //Precio de la butaca
-   char opcion = ' ';                    //Opció del programa (T. R o F)
+   char opcion = ' ';                    //Opción del programa (T. R o F)
    char tecla = ' ';                     //Tecla Si / No
 
    /* bucle para confirmar la opción */
@@ -36,12 +36,12 @@ int main() {
       /*=======================================
                ELABORACIÓN DEL TICKET
         =======================================*/
-      /* comprobamos la opción elegda, si es así, decimos al programa que queremos continuar
+      /* comprobamos la opción elegida, si es así, decimos al programa que queremos continuar
       con la impresión */
       if (opcion == 'T') {
          tecla = 'S';
          /* Mientras pulsemos Si, imprimimos tickets, preguntamos edad, calculamos precio,
-         incrementamos el número de butaacas vendidas e imprimimos el ticket*/
+         incrementamos el número de butacas vendidas e imprimimos el ticket*/
           while (tecla == 'S') {
             printf ("Edad: ");
             scanf ("%d", &edad);
